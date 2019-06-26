@@ -6,9 +6,8 @@ class Anagram
     @word=word
   end
 
-  def match(string)
-    @check_array=string.split(" ")
-    @check_array.collect do |checker|
+  def match(array)
+    array.collect do |checker|
       checker.split("").sort==word.split("").sort
     end
   end
