@@ -11,6 +11,7 @@ class Anagram
     array.each do |checker|
       if checker.split("").sort==word.split("").sort
         annagrams<<checker
+      end
     end
     annagrams
   end
