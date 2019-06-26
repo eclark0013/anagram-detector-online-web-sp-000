@@ -10,4 +10,6 @@ class Anagram
     @check_array=string.split(" ")
     @check_array.collect do |checker|
       checker.split("").sort==word.split("").sort
+    end
+  end
 end
