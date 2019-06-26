@@ -7,8 +7,11 @@ class Anagram
   end
 
   def match(array)
-    array.collect do |checker|
-      checker.split("").sort==word.split("").sort
+    annagrams=[]
+    array.each do |checker|
+      if checker.split("").sort==word.split("").sort
+        annagrams<<checker
     end
+    annagrams
   end
 end
